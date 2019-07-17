@@ -1,0 +1,6 @@
+<h2>To Do List</h2>
+<button type="submit" style="float:center" (click)="completedTask()">completed</button><br><br>
+<div *ngFor="let todo of todoList">
+    <app-c2 [todo]="todo">{{todo.title}}</app-c2>
+</div>
+
